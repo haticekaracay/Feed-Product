@@ -17,10 +17,6 @@ $base_url = "http://localhost/feed/";
 echo "<?xml version='1.0' encoding='UTF-8' ?>" . PHP_EOL;
 echo "<rss version='2.0'>".PHP_EOL;
 echo "<channel>".PHP_EOL;
-//echo "<title>Product Feed</title>".PHP_EOL;
-//echo "<link>".$base_url."index.php</link>".PHP_EOL;
-//echo "<description>Product Feeder</description>".PHP_EOL;
-//echo "<language>tr</language>".PHP_EOL;
 
 foreach($result as $row)
 {
@@ -39,5 +35,14 @@ foreach($result as $row)
 
 echo '</channel>'.PHP_EOL;
 echo '</rss>'.PHP_EOL;
+
+
+
+/*$array =  array(
+    "id" => "guid",
+    "productName" =>"name",
+    "categoryName" =>"category",
+    "price"=>"price"
+);*/
 
 ?>
